@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.wrapper {
+  min-width: 800px; 
+  width: 100%;
+  max-width: 1280px;
+}
+
+#accordion{margin:10px auto;width:90%}
+#accordion ul{list-style:none;margin:0;padding:0;}
+.accordion{display:none;}
+.accordion:target{display:block;}
+#accordion ul li a{text-decoration:none;display:block;padding:10px;}
+.accordion{padding:1px;}
+
+#accordion ul{
+   border-radius:5px;
+   border-radius:5px;
+   border-radius:5px;
+}
+
+#accordion ul li a{
+background:#000000;
+border-bottom:1px solid #ffffff;
+color:#ffffff;
+}
+.accordion{
+background:#000000;
+color:#ffffff;
+}
+.accordion:target{
+border-top:3px solid #ffffff;
+}
+
+.split-para      { 
+display:block;margin:10px;}
+
+.split-para span { display:block;float:right;width:50%;margin-left:10px;}
+
+.dropbtn {
+    background-color: #666666;
+    color: white;
+    width: 100px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 150px;
+    
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #2a2a2a}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #232323;
+}
+
+.left {
+    width: 30%;
+    margin-right: 60px;
+    padding: 10px;
+    float:right;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.bw {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.bw:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+body  {
+    background-image: url('http://i67.tinypic.com/2hwcu8o.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+img {
+display:block;float:right;width:50%;margin-left:10px;
+}  
+
+
+header {
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 30px;
+    background-color: #cccccc;
+    clear: left;
+}
+
+article {
+    margin-left: 60px;
+    margin-right: 200px;
+    color: white;
+    padding: 15px;
+    height: 100%;
+    overflow: hidden;
+    background-color: #515151;
+}
+
+footer {
+    
+    padding: 1em;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: black;
+
+}
+
+</style>
+</head>
+<body>
+<header>
+<div class="dropdown">
+  <button class="dropbtn">Home</button>
+  <div class="dropdown-content">
+    <a href="#">Cash Out</a>
+    <a href="#">Promotions</a>
+    <a href="#">Banking</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Sports</button>
+  <div class="dropdown-content">
+    <a href="#">Football</a>
+    <a href="#">Basketball</a>
+    <a href="#">Volleyball</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Casino</button>
+  <div class="dropdown-content">
+    <a href="#">Blackjack</a>
+    <a href="#">Poker</a>
+    <a href="#">Roulette</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">Games</button>
+  <div class="dropdown-content">
+    <a href="#">Starburst</a>
+    <a href="#">South Park Reel Chaos</a>
+    <a href="#">Super Lady Luck</a>
+  </div>
+</div>
+
+<div class="bw pic">
+<img src="http://i63.tinypic.com/20b22p3.png" alt="uk" style="width:23px;height:16px;">
+</div>
+
+<div class="bw pic">
+<img src="http://i64.tinypic.com/qntiqd.jpg" alt="de" style="width:23px;height:16px;">
+</div>
+
+<div class="bw pic">
+<img src="http://i67.tinypic.com/20rw907.png" alt="fr" style="width:23px;height:16px;">
+</div> 
+
+</header>
+ 
+
+<div class="left">
+    <div id="accordion">
+  <ul>
+    <li>
+      <a href="#one">Section 1</a>
+      <div id="one" class="accordion">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+      </div>
+    </li>
+    <li>
+      <a href="#two">Section 2</a>
+      <div id="two" class="accordion">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+      </div>
+    </li>    
+    <li>
+      <a href="#three">Section 3</a>
+      <div id="three" class="accordion">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<article>
+  <h1><font face="Helvetica">Page title</font></h1>
+  <p>	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+</p>
+  <p>	It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+ 
+ <p>	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+
+
+  <p>	The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+
+	There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
+The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</article>
+
+
+<footer>
+<p style="text-align:right">
+ <span style="float:left">2003 - 2011 © Copyright 10Bet.com Ltd. All rights reserved.</span>
+ <a href="https://www.10bet.com/sports/">Home</a>    <a href="https://www.10bet.com/help/terms-and-conditions/">Terms of use</a>    <a href="https://www.10bet.com/help/responsible-gaming/">Responsible gaming</a>    <a href="https://www.10bet.com/contactus/">Contact us</a>
+</p>
+</footer>
+
+</body>
+</html>
